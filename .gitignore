@@ -1,0 +1,8 @@
+node_modules
+*.log
+.DS_Store
+.next
+out/
+.env
+server-dist
+.eslintcache

@@ -1,0 +1,16 @@
+overwrite: true
+schema: '${APP_URL}/api/graphql'
+documents: 'src/**/*.graphql'
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-urql'
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
+config:
+  withComponents: false
+  withHooks: true
+  documentMode: documentNode
